@@ -17,9 +17,7 @@ function Entry(props) {
             </a>
           </span>
 
-          <p className="title">
-            {props.title} key={props.id}
-          </p>
+          <p className="title">{props.title}</p>
 
           <p className="dates">{props.dates}</p>
 
