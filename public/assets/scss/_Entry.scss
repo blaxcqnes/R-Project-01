@@ -1,0 +1,121 @@
+.entry {
+  height: 15rem;
+  margin: 10pt 0 10pt 0;
+
+  @media (max-width: 539px) {
+    height: auto;
+    margin: 25pt 0 10pt 0;
+    background-color: unset;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+    align-items: center;
+
+    @media (max-width: 539px) {
+      flex-direction: column;
+      height: auto;
+      margin-bottom: 25pt;
+    }
+
+    .imgOne {
+      width: 75%;
+      height: 120%;
+      scale: 70%;
+      border-radius: 5pt;
+      background-repeat: no-repeat;
+      background-position-x: 44%;
+      background-position-y: 25%;
+
+      @media (max-width: 319px) {
+        width: 65%;
+        scale: unset;
+      }
+
+      @media (max-width: 399px) {
+        width: 65%;
+        scale: unset;
+      }
+
+      @media (max-width: 539px) {
+        width: 70%;
+        scale: unset;
+      }
+    }
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10pt;
+      width: 120%;
+      align-items: start;
+
+      @media (max-width: 539px) {
+        width: auto;
+        margin-top: 25pt;
+        align-items: unset;
+      }
+
+      span {
+        display: flex;
+        flex-direction: row;
+        column-gap: 5pt;
+        align-items: center;
+
+        @media (max-width: 539px) {
+          align-self: center;
+        }
+
+        .locSvg {
+          width: 15pt;
+          height: 15pt;
+          margin-left: -2pt;
+        }
+
+        p {
+          font-size: 9pt;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+
+        .gmap {
+          margin-left: 12pt;
+          font-size: 7.5pt;
+          border-bottom: 1px solid #e2ba92;
+          color: #e2ba92;
+          text-decoration: none;
+          text-transform: none;
+        }
+      }
+
+      .title {
+        font-size: 17.5pt;
+        font-weight: 700;
+        color: #e2ba92;
+      }
+
+      .dates {
+        font-size: 9pt;
+        font-weight: 600;
+        color: #e2ba92;
+      }
+
+      .description {
+        width: 90%;
+        font-size: 9pt;
+        color: #ffffff;
+        text-align: start;
+
+        @media (max-width: 539px) {
+          width: 65%;
+          align-self: center;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
